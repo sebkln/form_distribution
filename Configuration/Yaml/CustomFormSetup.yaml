@@ -22,6 +22,15 @@ TYPO3:
                       60:
                         value: 'SaveToDatabase'
                         label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'
+          finishersDefinition:
+            Confirmation:
+              FormEngine:
+                label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
+                elements:
+                  message:
+                    label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+                    config:
+                      type: 'input'
 
         ### PROTOTYPE: BASIC CONTACT FORM
         basicContactForm:
