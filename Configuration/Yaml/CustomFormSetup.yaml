@@ -16,6 +16,9 @@ TYPO3:
                 editors:
                   900:
                     selectOptions:
+                      50:
+                        value: 'Confirmation'
+                        label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
                       60:
                         value: 'SaveToDatabase'
                         label: 'formEditor.elements.Form.finisher.SaveToDatabase.editor.header.label'

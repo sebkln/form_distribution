@@ -5,6 +5,7 @@ type: Form
 prototypeName: basicContactForm
 finishers:
   -
+    identifier: EmailToReceiver
     options:
       subject: 'Your message: {subject}'
       recipientAddress: your.company@example.com
@@ -18,7 +19,6 @@ finishers:
       attachUploads: 'true'
       translation:
         language: ''
-    identifier: EmailToReceiver
   -
     identifier: SaveToDatabase
     options:
@@ -39,6 +39,10 @@ finishers:
             mapOnDatabaseColumn: 'email'
           message:
             mapOnDatabaseColumn: 'message'
+  -
+    identifier: Confirmation
+    options:
+      message: 'Thank you for your message! We will get back to you as soon as possible.'
 renderables:
   -
     identifier: page-1
