@@ -18,6 +18,13 @@ namespace Sebkln\FormDistribution\Domain\Model;
 class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
+     * formtitle
+     *
+     * @var string
+     */
+    protected $formtitle = '';
+
+    /**
      * firstname
      *
      * @var string
@@ -109,6 +116,26 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     protected $media = null;
 
+    /**
+     * Returns the formtitle
+     *
+     * @return string $formtitle
+     */
+    public function getFormtitle()
+    {
+        return $this->formtitle;
+    }
+
+    /**
+     * Sets the formtitle
+     *
+     * @param string $formtitle
+     * @return void
+     */
+    public function setFormtitle($formtitle)
+    {
+        $this->formtitle = $formtitle;
+    }
     /**
      * Returns the firstname
      *

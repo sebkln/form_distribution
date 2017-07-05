@@ -30,6 +30,8 @@ finishers:
             value: 6
           tstamp:
             value: '{__currentTimestamp}'
+          formtitle:
+            value: 'Basic contact form'
         elements:
           name:
             mapOnDatabaseColumn: 'lastname'

@@ -16,14 +16,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'firstname,lastname,title,email,address,zip,city,www,telephone,fax,subject,message,media',
+        'searchFields' => 'formtitle,firstname,lastname,title,email,address,zip,city,www,telephone,fax,subject,message,media',
         'iconfile' => 'EXT:form_distribution/Resources/Public/Icons/form-distribution-data.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -107,7 +107,15 @@ return [
                 ],
             ],
         ],
-
+        'formtitle' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.formtitle',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
         'firstname' => [
             'exclude' => true,
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.firstname',

@@ -8,6 +8,10 @@
                 <source>Submitted form data</source>
                 <target>Übermittelte Formulardaten</target>
             </trans-unit>
+            <trans-unit id="tx_formdistribution_domain_model_data.formtitle">
+                <source>Form title</source>
+                <target>Name des Formulars</target>
+            </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.firstname">
                 <source>First name</source>
                 <target>Vorname</target>

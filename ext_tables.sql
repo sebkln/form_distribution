@@ -6,6 +6,7 @@ CREATE TABLE tx_formdistribution_domain_model_data (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
+	formtitle varchar(255) DEFAULT '' NOT NULL,
 	firstname varchar(255) DEFAULT '' NOT NULL,
 	lastname varchar(255) DEFAULT '' NOT NULL,
 	title varchar(255) DEFAULT '' NOT NULL,
