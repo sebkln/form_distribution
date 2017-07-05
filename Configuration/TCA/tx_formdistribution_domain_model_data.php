@@ -3,6 +3,7 @@ return [
     'ctrl' => [
         'title' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data',
         'label' => 'firstname',
+        'label_userFunc' => 'Sebkln\\FormDistribution\\UserFunc\\Tca->formDataLabel',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
