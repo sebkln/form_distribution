@@ -33,7 +33,14 @@ class Tca
             $newLabel .= ' ' . $record['lastname'];
         }
         if (!empty($record['message'])) {
-            $newLabel .= ': "' . substr(strip_tags($record['message']), 0, 20) . '..."';
+            $newLabel .= ': "' . substr(strip_tags($record['message']), 0, 20);
+            if (strlen($record['message']) > 20) {
+                $newLabel .=  '...';
+            }
+            $newLabel .=  '"';
+        }
+        if (!empty($record['tstamp'])) {
+            $newLabel .= ' (' . date("d-m-y H:i", $record['tstamp']) . ')';
         }
 
         $parameters['title'] = $newLabel;
