@@ -7,7 +7,10 @@
                 <source>Submitted form data</source>
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.formtitle">
-                <source>Form title</source>
+                <source>Title of the used form</source>
+            </trans-unit>
+            <trans-unit id="tx_formdistribution_domain_model_data.pagetitle">
+                <source>Page from which was submitted</source>
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.firstname">
                 <source>First name</source>
@@ -17,6 +20,9 @@
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.title">
                 <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_formdistribution_domain_model_data.company">
+                <source>Company</source>
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.email">
                 <source>Email address</source>
@@ -29,6 +35,9 @@
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.city">
                 <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_formdistribution_domain_model_data.country">
+                <source>Country</source>
             </trans-unit>
             <trans-unit id="tx_formdistribution_domain_model_data.www">
                 <source>Website</source>

@@ -25,6 +25,13 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $formtitle = '';
 
     /**
+     * pagetitle
+     *
+     * @var string
+     */
+    protected $pagetitle = '';
+
+    /**
      * firstname
      *
      * @var string
@@ -44,6 +51,13 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $title = '';
+
+    /**
+     * company
+     *
+     * @var string
+     */
+    protected $company = '';
 
     /**
      * email
@@ -72,6 +86,13 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $city = '';
+
+    /**
+     * country
+     *
+     * @var string
+     */
+    protected $country = '';
 
     /**
      * www
@@ -136,6 +157,28 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->formtitle = $formtitle;
     }
+
+    /**
+     * Returns the pagetitle
+     *
+     * @return string $pagetitle
+     */
+    public function getPagetitle()
+    {
+        return $this->pagetitle;
+    }
+
+    /**
+     * Sets the pagetitle
+     *
+     * @param string $pagetitle
+     * @return void
+     */
+    public function setPagetitle($pagetitle)
+    {
+        $this->pagetitle = $pagetitle;
+    }
+
     /**
      * Returns the firstname
      *
@@ -197,6 +240,27 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setTitle($title)
     {
         $this->title = $title;
+    }
+
+    /**
+     * Returns the company
+     *
+     * @return string $company
+     */
+    public function getCompany()
+    {
+        return $this->company;
+    }
+
+    /**
+     * Sets the company
+     *
+     * @param string $company
+     * @return void
+     */
+    public function setCompany($company)
+    {
+        $this->company = $company;
     }
 
     /**
@@ -281,6 +345,27 @@ class Data extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setCity($city)
     {
         $this->city = $city;
+    }
+
+    /**
+     * Returns the country
+     *
+     * @return string $country
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Sets the country
+     *
+     * @param string $country
+     * @return void
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
     }
 
     /**

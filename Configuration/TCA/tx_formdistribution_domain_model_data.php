@@ -18,11 +18,11 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'formtitle,firstname,lastname,title,email,address,zip,city,www,telephone,fax,subject,message,media',
+        'searchFields' => 'formtitle,firstname,lastname,company,title,email,address,zip,city,country,www,telephone,fax,subject,message,media',
         'iconfile' => 'EXT:form_distribution/Resources/Public/Icons/form-distribution-data.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, pagetitle, title, firstname, lastname, company, email, address, zip, city, country, www, telephone, fax, subject, message, media',
     ],
     'types' => [
         '1' => [
@@ -37,9 +37,9 @@ return [
         ],
     ],
     'palettes' => [
-        'formtitle' => ['showitem' => 'formtitle'],
-        'person' => ['showitem' => 'title, --linebreak--, firstname, --linebreak--, lastname,'],
-        'address' => ['showitem' => 'address, --linebreak--, zip, --linebreak--, city'],
+        'formtitle' => ['showitem' => 'formtitle, --linebreak--,  pagetitle'],
+        'person' => ['showitem' => 'title, --linebreak--, firstname, --linebreak--, lastname, --linebreak--, company'],
+        'address' => ['showitem' => 'address, --linebreak--, zip, --linebreak--, city, --linebreak--, country'],
         'contactinfo' => ['showitem' => 'email, --linebreak--, telephone, --linebreak--, fax, --linebreak--, www'],
         'communication' => ['showitem' => 'subject, --linebreak--, message'],
         'media' => ['showitem' => 'media'],
@@ -136,6 +136,16 @@ return [
                 'readOnly' => 1,
             ],
         ],
+        'pagetitle' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.pagetitle',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
+                'readOnly' => 1,
+            ],
+        ],
         'firstname' => [
             'exclude' => true,
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.firstname',
@@ -162,6 +172,16 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 10,
+                'eval' => 'trim',
+                'readOnly' => 1,
+            ],
+        ],
+        'company' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.company',
+            'config' => [
+                'type' => 'input',
+                'size' => 60,
                 'eval' => 'trim',
                 'readOnly' => 1,
             ],
@@ -199,6 +219,16 @@ return [
         'city' => [
             'exclude' => true,
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.city',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
+                'readOnly' => 1,
+            ],
+        ],
+        'country' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.country',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
