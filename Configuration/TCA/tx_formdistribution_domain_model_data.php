@@ -25,7 +25,24 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, formtitle, firstname, lastname, title, email, address, zip, city, www, telephone, fax, subject, message, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => [
+            'showitem' => '
+                --palette--;;formtitle,
+                --palette--;;person,
+                --palette--;;address,
+                --palette--;;contactinfo,
+                --palette--;;communication,
+                --palette--;;media
+            '
+        ],
+    ],
+    'palettes' => [
+        'formtitle' => ['showitem' => 'formtitle'],
+        'person' => ['showitem' => 'title, --linebreak--, firstname, --linebreak--, lastname,'],
+        'address' => ['showitem' => 'address, --linebreak--, zip, --linebreak--, city'],
+        'contactinfo' => ['showitem' => 'email, --linebreak--, telephone, --linebreak--, fax, --linebreak--, www'],
+        'communication' => ['showitem' => 'subject, --linebreak--, message'],
+        'media' => ['showitem' => 'media'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -144,7 +161,7 @@ return [
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.title',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
+                'size' => 10,
                 'eval' => 'trim',
                 'readOnly' => 1,
             ],
@@ -164,7 +181,7 @@ return [
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.address',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
+                'size' => 60,
                 'eval' => 'trim',
                 'readOnly' => 1,
             ],
@@ -174,7 +191,7 @@ return [
             'label' => 'LLL:EXT:form_distribution/Resources/Private/Language/locallang.xlf:tx_formdistribution_domain_model_data.zip',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
+                'size' => 10,
                 'eval' => 'trim',
                 'readOnly' => 1,
             ],
