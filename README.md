@@ -10,3 +10,8 @@ This TYPO3 extension can be used as a starter kit to configure individual forms 
     - **EmailToReceiver** finisher
     - **Confirmation** finisher
     - **SaveToDatabase** finisher, ready to use with the provided database table
+- Extended contact form, including:
+    - Multiple pages with fieldsets
+    - every field that is available as a database field, too
+    - Field for file upload
+    - **SaveToDatabase** finisher, correctly referring to the sys_file entry (for the uploaded file) with sys_file_reference
