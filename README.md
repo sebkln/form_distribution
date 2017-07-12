@@ -4,14 +4,21 @@ This TYPO3 extension can be used as a starter kit to configure individual forms 
 
 ## Features:
 - YAML configuration file with useful adaptions
-- Basic TypoScript-Setup
-- Basic and (of course) extendable database table to save form data
-- Basic contact form definition, including:
-    - **EmailToReceiver** finisher
-    - **Confirmation** finisher
-    - **SaveToDatabase** finisher, ready to use with the provided database table
-- Extended contact form, including:
-    - Multiple pages with fieldsets
-    - every field that is available as a database field, too
-    - Field for file upload
-    - **SaveToDatabase** finisher, correctly referring to the sys_file entry (for the uploaded file) with sys_file_reference
+- basic TypoScript-Setup
+- basic and (of course) extendable database table to save form data
+- several example forms to start with (see below)
+
+## Example form definitions:
+### Basic contact form
+- **EmailToReceiver** finisher
+- **Confirmation** finisher
+- **SaveToDatabase** finisher
+
+### Extended contact form
+- Multiple pages with fieldsets
+- every field that is available as a database field, too
+- Field for file upload
+- **SaveToDatabase** finisher, correctly referring to the sys_file entry (for the uploaded file) with sys_file_reference
+
+### Upload form
+- **SaveToDatabase** finisher, works the same as above
