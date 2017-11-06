@@ -11,7 +11,7 @@ finishers:
       recipientAddress: your.company@example.com
       recipientName: 'Your Company name'
       senderAddress: '{email}'
-      senderName: '{name}'
+      senderName: '{firstname} {lastname}'
       replyToAddress: ''
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
