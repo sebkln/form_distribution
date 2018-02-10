@@ -6,19 +6,13 @@ This TYPO3 extension can be used as a starter kit to configure individual forms 
 - YAML configuration file with useful adaptions
 - basic TypoScript-Setup
 - basic and (of course) extendable database table to save form data
-- several example forms to start with (see below)
+- an example form to start with (see below)
 
-## Example form definitions:
+## Example form definition:
 ### Basic contact form
 - **EmailToReceiver** finisher
 - **Confirmation** finisher
 - **SaveToDatabase** finisher
+- a new Form prototype to allow customized form templates
 
-### Extended contact form
-- Multiple pages with fieldsets
-- every field that is available as a database field, too
-- Field for file upload
-- **SaveToDatabase** finisher, correctly referring to the sys_file entry (for the uploaded file) with sys_file_reference
-
-### Upload form
-- **SaveToDatabase** finisher, works the same as above
+More examples (upload form, custom email templates, ...) can be found here:  https://github.com/sebkln/form_examples
