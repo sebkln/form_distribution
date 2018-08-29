@@ -1,12 +1,6 @@
 TYPO3:
   CMS:
     Form:
-      persistenceManager:
-        allowedExtensionPaths:
-          10: EXT:form_distribution/Resources/Private/Forms/
-        allowSaveToExtensionPaths: true
-        allowDeleteFromExtensionPaths: true
-
       prototypes:
         ### PROTOTYPE: STANDARD
         standard:
