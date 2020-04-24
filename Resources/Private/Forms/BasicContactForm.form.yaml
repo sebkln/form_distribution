@@ -1,11 +1,12 @@
 
+renderingOptions:
+  submitButtonLabel: Submit
 identifier: BasicContactForm
 label: 'Basic contact form'
 type: Form
 prototypeName: basicContactForm
 finishers:
   -
-    identifier: EmailToReceiver
     options:
       subject: 'Your message: {subject}'
       recipientAddress: your.company@example.com
@@ -16,13 +17,17 @@ finishers:
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
       format: html
-      attachUploads: 'true'
+      attachUploads: true
+    identifier: EmailToReceiver
   -
-    identifier: Confirmation
     options:
       message: 'Thank you for your message! We will get back to you as soon as possible.'
+    identifier: Confirmation
 renderables:
   -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     identifier: page-1
     label: 'Contact Form'
     type: Page
@@ -74,6 +79,9 @@ renderables:
           -
             identifier: NotEmpty
   -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     identifier: summarypage
     label: 'Summary page'
     type: SummaryPage
