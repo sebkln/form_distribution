@@ -1,0 +1,33 @@
+{
+	"name": "sebkln/form-distribution",
+	"type": "typo3-cms-extension",
+	"description": "Form distribution. Contains customized templates, YAML files for configuration and form definitions. Use it as a starter kit for your websites.",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"forms"
+	],
+	"homepage": "https://www.sebkln.de",
+	"authors": [
+		{
+			"name": "Sebastian Klein",
+			"email": "sebastian@sebkln.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": ">=10.4.0 <10.4.99"
+	},
+	"replace": {
+		"sebkln/form-distribution": "self.version",
+		"typo3-ter/form-distribution": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "form_distribution"
+		}
+	}
+}
