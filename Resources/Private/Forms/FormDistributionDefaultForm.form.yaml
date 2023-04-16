@@ -1,14 +1,14 @@
 
 renderingOptions:
   submitButtonLabel: Submit
-identifier: BasicContactForm
-label: 'Basic contact form'
+identifier: FormDistributionDefaultForm
+label: 'A first contact form'
 type: Form
-prototypeName: basicContactForm
+prototypeName: standard
 finishers:
   -
     options:
-      subject: 'Your message: {subject}'
+      subject: 'Message sent by contact form'
       senderAddress: '{email}'
       senderName: '{name}'
       attachUploads: true
@@ -26,9 +26,19 @@ renderables:
       previousButtonLabel: 'Previous step'
       nextButtonLabel: 'Next step'
     identifier: page-1
-    label: 'Contact Form'
+    label: ''
     type: Page
     renderables:
+      -
+        properties:
+          options:
+            Mr: Mr
+            Ms: Ms
+            'Neutral salutation': 'Neutral salutation'
+          prependOptionLabel: 'Please choose …'
+        type: SingleSelect
+        identifier: salutation
+        label: Salutation
       -
         defaultValue: ''
         identifier: name
@@ -36,18 +46,7 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: Name
-        validators:
-          -
-            identifier: NotEmpty
-      -
-        defaultValue: ''
-        identifier: subject
-        label: Subject
-        type: Text
-        properties:
-          fluidAdditionalAttributes:
-            placeholder: Subject
+            required: required
         validators:
           -
             identifier: NotEmpty
@@ -58,7 +57,7 @@ renderables:
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: 'Email address'
+            required: required
         validators:
           -
             identifier: NotEmpty
@@ -72,6 +71,7 @@ renderables:
         properties:
           fluidAdditionalAttributes:
             placeholder: ''
+            required: required
         validators:
           -
             identifier: NotEmpty

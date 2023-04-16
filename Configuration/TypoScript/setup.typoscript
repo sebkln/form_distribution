@@ -1,7 +1,0 @@
-// form_distribution: Static template #1
-//
-// This file allows you to add different frontend configurations in multidomain setups,
-// in which forms could then use different markup or labels.
-plugin.tx_form.settings.yamlConfigurations {
-    500 = EXT:form_distribution/Configuration/Yaml/CustomFormFrontend1.yaml
-}

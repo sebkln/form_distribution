@@ -1,5 +1,0 @@
-persistenceManager:
-  allowedExtensionPaths:
-    10: EXT:form_distribution/Resources/Private/Forms/
-  allowSaveToExtensionPaths: true
-  allowDeleteFromExtensionPaths: true
