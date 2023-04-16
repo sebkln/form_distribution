@@ -15,6 +15,7 @@ here:
 - General form configuration
 - A simple contact form
 - Useful directory structure for customized form and email templates
+- If translation is needed, the use of language files can be enabled
 
 ## How to use this extension
 

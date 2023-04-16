@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:Resources/Private/Language/Form/locallang.xlf" date="2023-04-04T20:13:00Z"
+		  product-name="form_distribution">
+		<header/>
+		<body>
+			<!-- ### LABELS, FIELDSETS, HEADINGS
+				 Translation keys:
+				 - element.<element-name>.properties.label
+				 - element.<element-type>.properties.label
+			-->
+			<trans-unit id="element.salutation.properties.label" approved="yes">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="element.name.properties.label" approved="yes">
+				<source>Full name</source>
+			</trans-unit>
+			<trans-unit id="element.firstname.properties.label" approved="yes">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="element.lastname.properties.label" approved="yes">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="element.email.properties.label" approved="yes">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="element.message.properties.label" approved="yes">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.properties.label" approved="yes">
+				<source>Summary</source>
+			</trans-unit>
+
+
+			<!-- ### OPTIONS
+				 Translation keys:
+				 - element.<element-name>.properties.options.<value>
+				 - element.<element-type>.properties.options.<value>
+			-->
+			<trans-unit id="element.SingleSelect.properties.prependOptionLabel" approved="yes">
+				<source>Please choose …</source>
+			</trans-unit>
+			<trans-unit id="element.salutation.properties.options.Mr" approved="yes">
+				<source>Mr</source>
+			</trans-unit>
+			<trans-unit id="element.salutation.properties.options.Ms" approved="yes">
+				<source>Ms</source>
+			</trans-unit>
+			<trans-unit id="element.salutation.properties.options.Neutral salutation" approved="yes">
+				<source>Neutral salutation</source>
+			</trans-unit>
+
+
+			<!-- ### PLACEHOLDER ATTRIBUTES
+				 Translation keys:
+				 - element.<element-name>.properties.placeholder
+				 - element.<element-type>.properties.placeholder
+			-->
+			<trans-unit id="element.email.properties.placeholder" approved="yes">
+				<source>john@doe.com</source>
+			</trans-unit>
+
+
+			<!-- ### BUTTONS
+				 Translation keys:
+				 - element.Form.renderingOptions.submitButtonLabel
+				 - element.Page.renderingOptions.previousButtonLabel
+				 - element.Page.renderingOptions.nextButtonLabel
+				 - element.SummaryPage.renderingOptions.previousButtonLabel
+				 - element.SummaryPage.renderingOptions.nextButtonLabel
+			-->
+			<trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+				<source>Send message</source>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.previousButtonLabel" approved="yes">
+				<source>back</source>
+			</trans-unit>
+			<trans-unit id="element.Page.renderingOptions.nextButtonLabel" approved="yes">
+				<source>continue</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel" approved="yes">
+				<source>back</source>
+			</trans-unit>
+			<trans-unit id="element.SummaryPage.renderingOptions.nextButtonLabel" approved="yes">
+				<source>continue</source>
+			</trans-unit>
+
+
+			<!-- ### FINISHERS
+				 Translation key: finisher.<finisher-identifier>.<option-name>
+			-->
+			<trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+				<source>Message from website</source>
+			</trans-unit>
+			<trans-unit id="finisher.Confirmation.message" approved="yes">
+				<source>Thank you for your message! We will get back to you as soon as possible.</source>
+			</trans-unit>
+
+
+			<!-- ### VALIDATION ERROR MESSAGES
+				 ATTENTION: These will not work if you already set a custom message in your form definition!
+
+				 Translation keys:
+				 - validation.error.<element-identifier>.<error-code>
+				 - validation.error.<error-code>
+			-->
+			<trans-unit id="validation.error.email.1221559976" approved="yes">
+				<source>Please check the spelling of your email address.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
