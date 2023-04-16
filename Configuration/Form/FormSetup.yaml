@@ -24,3 +24,9 @@ TYPO3:
                   100: 'EXT:form_distribution/Resources/Private/Partials/'
                 layoutRootPaths:
                   100: 'EXT:form_distribution/Resources/Private/Layouts/'
+
+                # Enable the following lines if you need translated forms.
+                # The supplied XLIFF files already contain some labels, so be sure to adjust these to your needs.
+#                translation:
+#                  translationFiles:
+#                    100: 'EXT:form_distribution/Resources/Private/Language/Form/locallang.xlf'
