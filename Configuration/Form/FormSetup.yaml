@@ -10,13 +10,6 @@ TYPO3:
         standard:
           formElementsDefinition:
             Form:
-              formEditor:
-                editors:
-                  900:
-                    selectOptions:
-                      50:
-                        value: 'Confirmation'
-                        label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
               renderingOptions:
                 templateRootPaths:
                   100: 'EXT:form_distribution/Resources/Private/Templates/'
