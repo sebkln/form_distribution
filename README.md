@@ -6,6 +6,7 @@ TYPO3 Form Framework.
 Since some configurations have changed between TYPO3 versions, you can choose the compatible version of this extension
 here:
 
+- [form_distribution for TYPO3 v14](https://github.com/sebkln/form_distribution/tree/14.3)
 - [form_distribution for TYPO3 v13](https://github.com/sebkln/form_distribution/tree/13.4)
 - [form_distribution for TYPO3 v12](https://github.com/sebkln/form_distribution/tree/12.4)
 - [form_distribution for TYPO3 v11](https://github.com/sebkln/form_distribution/tree/11.5)
